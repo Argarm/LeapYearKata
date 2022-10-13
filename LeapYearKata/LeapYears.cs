@@ -2,7 +2,8 @@
 {
     public class LeapYears {
         public bool IsLeapYear(int year) {
-            return false;
+            if(year % 4 != 0) return false;
+            return true;
         }
     }
 }
