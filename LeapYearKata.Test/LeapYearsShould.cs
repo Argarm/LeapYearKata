@@ -33,5 +33,15 @@ namespace LeapYearKata.Test {
 
             isLeapYear.Should().BeFalse();
         }
+        
+        [Test]
+        public void return_true_if_year_is_divisible_by_400() {
+            var leapYears = new LeapYears();
+            var year = 2000;
+
+            var isLeapYear = leapYears.IsLeapYear(year);
+
+            isLeapYear.Should().BeTrue();
+        }
     }
 }
